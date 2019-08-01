@@ -12,18 +12,17 @@ import java.util.Scanner;
 
 import com.bridgelabz.utility.utility;
 
-public class IntOpt
-
+public class DoubleOpt
 {
 	public static void main(String args[])
 	{
-	int a,b,c,value = 0,num;
+	double a,b,c,value = 0,num;
 	{
 		 Scanner sc = new Scanner(System.in);
 		System.out.println(" Enter the value of a,b,c:");
-		 a = sc.nextInt();
-		 b = sc.nextInt();	
-		 c = sc.nextInt();
+		 a = sc.nextDouble();
+		 b = sc.nextDouble();	
+		 c = sc.nextDouble();
 		 
 	System.out.println(" 1.a + b *c");
 	System.out.println(" 2.a * b + c");
@@ -31,7 +30,7 @@ public class IntOpt
 	System.out.println(" 4.a % b + c");
 	System.out.println(" Enter the Number of operation:");
 	num = sc.nextInt();
-	value=utility.operation(a,b,c, num, value);
+	value=utility.operation1(a,b,c, num, value);
 	System.out.println(value);
 	sc.close();
 	}
